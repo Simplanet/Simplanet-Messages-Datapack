@@ -1,0 +1,33 @@
+{
+	"parent": "simplanet:locations/root",
+	"rewards": {
+		"function": "simplanet:locations/entered_nether_121world"
+	},
+	"criteria": {
+		"nether_121world": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player": {
+					"location": {
+						"dimension": "minecraft:the_nether",
+						"position": {
+							"x": {
+								"min": -512,
+								"max": 512
+							},
+							"z": {
+								"min": 512,
+								"max": 1535
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"nether_121world"
+		]
+	]
+}

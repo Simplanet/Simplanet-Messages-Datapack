@@ -1,0 +1,76 @@
+{
+	"parent": "simplanet:locations/root",
+	"rewards": {
+		"function": "simplanet:locations/entered_nether_outofbounds"
+	},
+	"criteria": {
+		"outofbounds_nether_north": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player": {
+					"location": {
+						"dimension": "minecraft:the_nether",
+						"position": {
+							"z": {
+								"max": -512
+							}
+						}
+					}
+				}
+			}
+		},
+		"outofbounds_nether_south": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player": {
+					"location": {
+						"dimension": "minecraft:the_nether",
+						"position": {
+							"z": {
+								"min": 1535
+							}
+						}
+					}
+				}
+			}
+		},
+		"outofbounds_nether_east": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player": {
+					"location": {
+						"dimension": "minecraft:the_nether",
+						"position": {
+							"x": {
+								"min": 1535
+							}
+						}
+					}
+				}
+			}
+		},
+		"outofbounds_nether_west": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player": {
+					"location": {
+						"dimension": "minecraft:the_nether",
+						"position": {
+							"x": {
+								"max": -512
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"outofbounds_nether_north",
+			"outofbounds_nether_south",
+			"outofbounds_nether_east",
+			"outofbounds_nether_west"
+		]
+	]
+}

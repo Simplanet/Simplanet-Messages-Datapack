@@ -1,0 +1,33 @@
+{
+	"parent": "simplanet:locations/root",
+	"rewards": {
+		"function": "simplanet:locations/entered_nether_newworld"
+	},
+	"criteria": {
+		"nether_newworld": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player": {
+					"location": {
+						"dimension": "minecraft:the_nether",
+						"position": {
+							"x": {
+								"min": 512,
+								"max": 1535
+							},
+							"z": {
+								"min": -512,
+								"max": 512
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"nether_newworld"
+		]
+	]
+}
