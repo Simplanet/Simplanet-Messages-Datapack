@@ -1,0 +1,39 @@
+{
+	"parent": "simplanet:locations/root",
+	"rewards": {
+		"function": "simplanet:locations/entered_nether_notmailnetwork"
+	},
+	"criteria": {
+		"nether_notmailnetwork": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player": {
+					"location": {
+						"dimension": "minecraft:the_nether",
+						"position": {
+							"y": {
+								"min": 11
+							}
+						}
+					}
+				}
+			}
+		},
+		"nether_notmailnetwork_overworld": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player": {
+					"location": {
+						"dimension": "minecraft:overworld"
+					}
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"nether_notmailnetwork",
+			"nether_notmailnetwork_overworld"
+		]
+	]
+}

@@ -1,10 +1,10 @@
 {
 	"parent": "simplanet:locations/root",
 	"rewards": {
-		"function": "simplanet:locations/entered_nether_oldworld"
+		"function": "simplanet:locations/entered_nether_mailnetwork"
 	},
 	"criteria": {
-		"nether_oldworld": {
+		"nether_mailnetwork": {
 			"trigger": "minecraft:location",
 			"conditions": {
 				"player": {
@@ -13,14 +13,14 @@
 						"position": {
 							"x": {
 								"min": -512,
-								"max": 512
+								"max": 1535
 							},
 							"z": {
 								"min": -512,
-								"max": 512
+								"max": 1535
 							},
 							"y": {
-								"min": 11
+								"max": 11
 							}
 						}
 					}
@@ -30,7 +30,7 @@
 	},
 	"requirements": [
 		[
-			"nether_oldworld"
+			"nether_mailnetwork"
 		]
 	]
 }
